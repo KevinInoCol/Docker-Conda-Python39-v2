@@ -1,0 +1,26 @@
+name: datapath_mlops_cvenv
+channels:
+  - pytorch
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  #- python=3.7.12
+  - python=3.9
+  - tensorflow
+  - pip:
+    #- torch==1.9
+    - numpy<2
+    - cookiecutter
+    - pandas
+    - scipy
+    - scikit-learn
+    - notebook
+    - cvlib
+    - opencv-python
+    - uvicorn
+    - fastapi
+    - feature_engine
+    - hydra-core
+    #- pycaret
+prefix: /root/miniconda3/envs/datapath_mlops_cvenv
